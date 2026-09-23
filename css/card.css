@@ -1,0 +1,74 @@
+.DETERMINATION, .DT {
+    color: red;
+}
+
+.PATIENCE {
+    color: #41fcff;
+}
+
+.BRAVERY {
+    color: #fca500;
+}
+
+.INTEGRITY {
+    color: #0064ff;
+}
+
+.PERSEVERANCE, .KR {
+    color: #d535d9;
+}
+
+.KINDNESS {
+    color: #00c000;
+}
+
+.JUSTICE {
+    color: #ffff00;
+}
+
+.MONSTER {
+    color: #ffffff;
+}
+
+
+.LEGENDARY, .DMG, .G {
+    color: gold;
+}
+
+.BASE {
+    color: gray;
+}
+
+.EPIC {
+    color: #d535d9;
+}
+
+.RARE {
+    color: #00b8ff;
+}
+
+.COMMON {
+    color: #fff;
+}
+
+.TOKEN {
+    color: #00c800;
+}
+
+
+.cost {
+    color: #00d0ff !important;
+}
+
+.ATK {
+    color: #f0003c !important;
+}
+
+.HP {
+    color: #0dd000 !important;
+}
+
+
+.UNDEFINED {
+    color: gray;
+}

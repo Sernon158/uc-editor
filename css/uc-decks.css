@@ -1,0 +1,48 @@
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cardsList .card {
+    height: 275px;
+}
+
+.card #quantity {
+    font-size: 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+.list-group-item {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+    height: 21px;
+    padding: 0px 0px 0px 5px;
+}
+
+.list-group-item:hover {
+    background-color: #660033;
+    cursor: pointer;
+}
+
+.deckCardsList li {
+    font-size: 13px !important;
+}
+
+.artifact-container {
+    text-align: center;
+    height: 120px;
+}
+
+.artifact-container img {
+    margin: 0 5px 0 5px;
+    width: 64px;
+    height: 64px;
+}
+
+.collection {
+    min-height: 560px;
+}

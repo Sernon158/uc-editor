@@ -1,0 +1,668 @@
+* {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --width: calc(100vw - 20px) !important;
+    }
+    
+    .group-header {
+        flex-wrap: wrap;
+        max-width: 100%;
+
+        .right-side {
+            display: flex;
+            justify-content: center;
+            border-top: 2px solid white;
+            margin-top: 6px;
+            padding-top: 7.5px;
+            width: 100%;
+            gap: 15px;
+        }
+    }
+
+    #frame-collection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div {
+            margin-bottom: 4px;
+            width: 130px;
+            height: 180px;
+
+            .cardFrame {
+                background-size: 130px;
+            }
+        }
+    }
+
+    #cardDescInfo > div {
+        width: 160px !important;
+    }
+
+    #card-templates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-display {
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        margin-bottom: 5px;
+
+        & img { border-bottom: 1px solid white }
+        & span { text-align: center }
+    }
+
+    footer .center {
+        order: 1;
+        flex-basis: 100%;
+        padding-top: 8px;
+    }
+}
+
+:root {
+    --width: calc(100% - 20px);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #204d74;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #204d74;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+@font-face {
+    font-family: dtm-mono;
+    src: url('../Undercards/fonts/DTM-Mono.otf') format('truetype');
+}
+
+body {
+    font-family: dtm-mono;
+    background-color: black;
+    background-image: url('../Undercards/uty_homepage.png');
+    background-repeat: repeat;
+    color: white;
+    margin-inline: 10px;
+    padding: 0;
+    padding-right: 0 !important;
+    margin-bottom: 50px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+main > div[data-group-id] {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.group-header {
+    display: flex;
+    position: sticky;
+    border: 2px solid white;
+    border-radius: 8.5px;
+    padding: 12px;
+    box-shadow: 0px 0px 5px white;
+    z-index: 100;
+    overflow: auto;
+    background-color: rgb(20, 20, 20);
+    justify-content: space-between;
+    margin-top: 10px;
+    top: 10px;
+
+    & img {
+        cursor: pointer;
+    }
+
+    & .center {
+        text-align: center;
+        gap: 25px;
+        
+        img { width: 20px; height: 20px; }
+    }
+}
+
+/*
+div .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .right-side {
+    margin-left: auto !important;
+}
+
+div .left-side, div .right-side {
+    position: absolute;
+}
+*/
+
+.btn-create {
+    margin-left: 11px;
+    width: 16px;
+    transition: .2s filter;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        filter: drop-shadow(0px 0px 7px gold);
+    }
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: var(--width);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 12px;
+    z-index: 200;
+    box-shadow: 0px 0px 5px white;
+    border-bottom: 0;
+    background-color: rgb(20, 20, 20);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+.group-name {
+    min-width: 50px;
+    min-height: 20px;
+
+    span { cursor: text; }
+}
+
+#frame-collection {
+    min-height: 560px;
+
+    & > div > *:not(.cardFrame) {
+        display: none;
+    }
+
+    & br {
+        display: none;
+    }
+}
+
+#dialog-frames-list {
+    margin-top: 7.5px;
+}
+
+.collection {
+    margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    max-width: 100%;
+}
+
+#frames-custom {
+    display: flex;
+    position: relative;
+    bottom: 0;
+}
+
+.i {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
+    border: 1px solid white;
+
+    &.name {
+        text-align: left;
+    }
+
+    &.cost {
+        color: #00d0ff !important;
+    }
+
+    &.atk {
+        color: #f0003c !important;
+    }
+
+    &.hp {
+        color: #0dd000 !important;
+    }
+
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+.cardName, .cardCost, .cardATK, .cardHP {
+    cursor: text;
+    & > input { 
+        z-index: 200;
+    }
+}
+
+.cardName div {
+    min-height: 100%;
+
+    & input {
+        height: 100%;
+    }
+}
+
+#cardRarityMenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+
+    & div {
+        display: flex;
+        gap: 3px;
+        & img {
+            cursor: pointer;
+            transition: .1s filter;
+            &:hover {
+                filter: drop-shadow(0px 0px 2px white);
+            }
+        }
+    }
+}
+
+#custom-rarity {
+    box-shadow: 0px 0px 3.5px black;
+}
+
+#spellSoulMenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    & span {
+        cursor: pointer;
+
+        &:hover {
+            filter: drop-shadow(0px 0px 1px gray);
+        }
+    }
+}
+
+hr {
+    margin-block: 7.5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.soulChooseSpan {
+    min-width: 200px;
+}
+
+.cardImage {
+    background-position: center;
+    background-size: contain;
+
+    & label {
+        position: absolute;
+        width: 100%;
+        height: 90px;
+
+        & .cardImageUploader {
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.breaking-skin .cardImage label {
+    pointer-events: auto;
+    top: 34px !important;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+#cardImageMenu[data-enchant] > div {
+
+    &:not(:first-of-type) {
+        text-decoration: line-through red 4px;
+        cursor: not-allowed;
+        text-shadow: 0 !important;
+    }
+
+    & > span:hover { color: lightgray !important; }
+}
+
+#cardImageMenu > div > span {
+    color: lightgray;
+
+    &:hover {
+        color: rgb(235, 235, 235);
+    }
+
+    &.underlined {
+        text-shadow: 1px 1px 7px gray;
+    }
+}
+
+#contextmenu, #contextmenu-artifact {
+    position: absolute;
+    border: 2px solid white;
+    outline: 5px solid black;
+    border-radius: 7.5px;
+    z-index: 999;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    padding-block: 2px;
+
+    span {
+        cursor: pointer;
+        padding-inline: 5px;
+        padding-block: 2px;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+
+    hr {
+        margin-block: 2px;
+        border: 1px solid white;
+    }
+}
+
+.cardDesc div textarea {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    outline: none;
+    border: none;
+    /* border: 1px solid white; */
+    resize: none;
+    text-align: center;
+}
+
+#removeCardImage::before {
+    content: 'x';
+    color: red;
+    cursor: pointer;
+}
+
+.tribe.addTribe, .infoPowers.addPower {
+    transition: .2s filter;
+
+    &:hover {
+        filter: drop-shadow(0px 0px 4px gray);
+    }
+}
+
+#tribesChooseMenu, #powersChooseMenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 250px;
+
+    & img {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        transition: .1s filter;
+
+        &:hover {
+            filter: drop-shadow(0px 0px 2px white)
+        }
+    }
+
+    & > img.selected, & > .custom-powers-menu > img.selected {
+        filter: drop-shadow(0px 0px 6px yellow);
+    }
+}
+
+parent {
+    position: relative;
+}
+
+.infoPowersDetails {
+    right: 50%;
+}
+
+.cardRarity {
+    /* width: 26px; */
+    /* height: 26px; */
+    background-position: center;
+    background-size: cover;
+}
+
+#open-settings, #create-group {
+    text-wrap: nowrap;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    padding-inline: 6px;
+
+    & svg {
+        vertical-align: middle;
+    }
+}
+
+.tippy-arrow {
+    padding: 3px;
+}
+
+#templates-menu {
+    & #template-type-selector {
+        display: flex;
+        margin-bottom: 15px;
+        
+        & div {
+            flex: 1;
+            text-align: center;
+            border: 1px solid white;
+            padding-block: 5px;
+            transition: .2s opacity;
+
+            &:first-of-type {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            &:last-of-type {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            &:not([data-selected]):hover {
+                opacity: .75;
+                cursor: pointer;
+            }
+
+            &[data-selected] {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    & #template-searcher {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
+    & #template-list {
+        overflow-y: scroll;
+        height: 600px;
+
+        & .card-display {
+            border: 1px solid white;
+            cursor: pointer;
+            font-size: 1.5em;
+            &:not(:first-child) {
+                margin-top: 7.5px;
+            }
+
+            & img {
+                border-right: 1px solid white;
+            }
+        }
+    }
+
+    & br {
+        display: none;
+    }
+}
+
+.bootstrap-dialog-message {
+    & br {
+        display: none;
+    }
+}
+
+#settings-menu {
+    select {
+        color: black;
+        width: 150px;
+    }
+
+    hr {
+        margin-block: 17.5px;
+    }
+}
+
+.card {
+    z-index: unset;
+
+    &:hover {
+        opacity: 1;
+        cursor: default;
+        z-index: 99;
+    }
+
+    &:has(input:focus), &:has(.cardDesc div[data-tippy-root]) {
+        z-index: 100;
+    }
+
+    &:has(img[aria-expanded="true"]) {
+        z-index: 101;
+    }
+}
+
+.add-button-card {
+    scale: 1.46;
+    padding: 2.5px;
+}
+
+#save-new-group, #settings-menu {
+    & input {
+        outline: 1px solid white;
+        border-radius: 2.5px;
+    }
+
+    & hr {
+        margin-block: 1.5em;
+    }
+
+    & button {
+        color: black;
+        border-radius: 2.5px;
+        outline: 1.5px solid gray;
+        background-color: white;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.custom-powers-menu {
+    text-align: center;
+    width: 100%;
+}
+
+#cardDescInfo > div {
+    width: 300px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.card.dragging, .artifact.dragging {
+    opacity: 0.5;
+    scale: 0.5;
+}
+
+.toggle-drag-mode.enabled {
+    filter:
+        drop-shadow(0px 0px 2.5px red)
+        drop-shadow(0px 0px 5px red)
+        drop-shadow(0px 0px 7.5px red)
+        drop-shadow(0px 0px 10px red);
+}
+
+
+/* Custom Card Type: Enchant */
+.card.enchant {
+    .shinySlot { background-image: url('../Undercards/frameSkins/Undertale/frame_shiny.png'); }
+    .shinySlot.animated { background-image: url('../Undercards/frameSkins/Undertale/frame_shiny_animated.png'); }
+    .cardFrame { background-image: url('../Undercards/frameSkins/Undertale/frame_enchant.png'); }
+
+    .cardName {
+        width: 160px;
+    }
+
+    .cardImage {
+        background-position: 0 46px;
+        background-size: 100% 183px;
+    }
+
+    .cardImageTip {
+        position: absolute;
+        top: 33px;
+        left: 11px;
+        color: black;
+        font-size: 15px;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .cardDesc {
+        top: 54px;
+        background: rgba(0, 0, 0, .6);
+        height: 183px;
+    }
+}

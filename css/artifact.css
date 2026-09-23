@@ -1,0 +1,142 @@
+.artifact-collection {
+    margin-block: 4px;
+    margin-inline: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artifact {
+    display: flex;
+    /* position: block;    What the fuck is this */
+    background-color: black;
+    /* color: #fff; */
+    border: 2.5px solid #fff;
+    margin-top: 5px;
+    padding: 7.5px;
+    width: 100%;
+    
+    & .artifactRarity { border-color: #fff; }
+
+    &.common {
+        & .artifactImage img { border-color: #fff; }
+        & .artifactName, .artifactRarity { color: #fff; }
+    }
+    &.legendary {
+        /*border-color: gold;*/
+        & .artifactImage img { border-color: gold; }
+        & .artifactName, .artifactRarity { color: gold; }
+        /*& .artifactRarity { border-color: gold; }*/
+    }
+    &.token {
+        /*border-color: #00c800;*/
+        & .artifactImage img { border-color: #00c800; }
+        & .artifactName, .artifactRarity { color: #00c800; }
+        /*& .artifactRarity { border-color: #00c800; }*/
+    }
+    &.determination {
+        /*border-color: red;*/
+        & .artifactImage img { border-color: red; }
+        & .artifactName, .artifactRarity { color: red; }
+        /*& .artifactRarity { border-color: red; }*/
+    }
+    &.undefined {
+        & .artifactRarity { color: gray; }
+    }
+}
+
+.artifact .artifactHeader {
+    display: flex;
+}
+
+.artifact .artifactImage {
+    display: flex;
+    width: 32px;
+    height: 32px;
+
+    & img {
+        border: 1px solid white;
+        object-fit: scale-down;
+        max-width: 32px;
+        max-height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        padding: 1px;
+    }
+
+    & input {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.artifact .artifactName {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    min-width: 100px;
+    margin-inline: 10px;
+    width: auto;
+
+    & input {
+        width: 100%;
+        height: 100%;
+    }
+    
+    &.modified {
+        max-width: 140px;
+        min-width: 140px;
+        padding-right: 15px;
+        border-right: 2.5px solid white;
+    }
+}
+
+.artifact .artifactRarity {
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    margin-right: 10px;
+    border-inline: 2.5px solid white;
+    font-size: 1.5em;
+
+    & select {
+        background-color: black;
+    }
+}
+
+.artifact .artifactDesc {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    & textarea {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border: 1px solid white;
+        resize: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .artifact {
+        flex-direction: column;
+
+        .artifactName {
+            max-width: 140px;
+            min-width: 140px;
+        }
+
+        .artifactRarity {
+            border-right: 0 !important;
+        }
+
+        .artifactDesc {
+            border-top: 2px solid white;
+            padding-top: 7.5px;
+            margin-top: 7.5px;
+            min-height: 40px;
+        }
+    }
+}

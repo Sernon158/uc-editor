@@ -1,0 +1,321 @@
+/* Undertale frame */
+
+.undertale-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Undertale/frame_shiny.png');
+}
+
+.undertale-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Undertale/frame_shiny_animated.png');
+}
+
+.undertale-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Undertale/frame_spell.png');
+}
+
+.undertale-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Undertale/frame_monster.png');
+}
+
+.undertale-frame .cardName, .undertale-frame .cardCost {
+    top: 9px;
+}
+
+.undertale-frame .cardDesc, .undertale-frame .cardSilence {
+    top: 129px;
+}
+
+.undertale-frame .cardATK, .undertale-frame .cardHP, .undertale-frame .cardRarity {
+    top: 213px;
+}
+
+.undertale-frame .cardQuantity, .undertale-frame .cardUCPCost {
+    top: 240px;
+}
+
+/* Deltarune frame */
+
+.deltarune-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Deltarune/frame_shiny.png');
+}
+
+.deltarune-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Deltarune/frame_shiny_animated.png');
+}
+
+.deltarune-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Deltarune/frame_spell.png');
+}
+
+.deltarune-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Deltarune/frame_monster.png');
+}
+
+.deltarune-frame .cardName, .deltarune-frame .cardCost {
+    top: 9px;
+}
+
+.deltarune-frame .cardDesc, .deltarune-frame .cardSilence {
+    top: 130px;
+}
+
+.deltarune-frame .cardATK, .deltarune-frame .cardHP, .deltarune-frame .cardRarity {
+    top: 214px;
+}
+
+.deltarune-frame .cardQuantity, .deltarune-frame .cardUCPCost {
+    top: 241px;
+}
+
+/* scifi frame */
+
+.time-to-get-serious-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Time_to_get_serious/frame_shiny.png');
+}
+
+.time-to-get-serious-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Time_to_get_serious/frame_shiny_animated.png');
+}
+
+.time-to-get-serious-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Time_to_get_serious/frame_spell.png');
+}
+
+.time-to-get-serious-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Time_to_get_serious/frame_monster.png');
+}
+
+.time-to-get-serious-frame .cardName, .time-to-get-serious-frame .cardCost {
+    top: 9px;
+}
+
+.time-to-get-serious-frame .cardDesc, .time-to-get-serious-frame .cardSilence {
+    top: 130px;
+}
+
+.time-to-get-serious-frame .cardATK, .time-to-get-serious-frame .cardHP, .time-to-get-serious-frame .cardRarity {
+    top: 214px;
+}
+
+.time-to-get-serious-frame .cardQuantity, .time-to-get-serious-frame .cardUCPCost {
+    top: 241px;
+}
+
+/* Golden frame */
+
+.golden-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Golden/frame_shiny.png');
+}
+
+.golden-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Golden/frame_shiny_animated.png');
+}
+
+.golden-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Golden/frame_spell.png');
+}
+
+.golden-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Golden/frame_monster.png');
+}
+
+.golden-frame .cardName, .golden-frame .cardCost {
+    top: 9px;
+}
+
+.golden-frame .cardDesc, .golden-frame .cardSilence {
+    top: 129px;
+}
+
+.golden-frame .cardATK, .golden-frame .cardHP, .golden-frame .cardRarity {
+    top: 213px;
+}
+
+.golden-frame .cardQuantity, .golden-frame .cardUCPCost {
+    top: 240px;
+}
+
+/* Vaporeware */
+
+.vaporwave-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Vaporwave/frame_shiny.png');
+}
+
+.vaporwave-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Vaporwave/frame_shiny_animated.png');
+}
+
+.vaporwave-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Vaporwave/frame_spell.png');
+}
+
+.vaporwave-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Vaporwave/frame_monster.png');
+}
+
+.vaporwave-frame .cardName, .vaporwave-frame .cardCost {
+    top: 9px;
+}
+
+.vaporwave-frame .cardDesc, .vaporwave-frame .cardSilence {
+    top: 129px;
+}
+
+.vaporwave-frame .cardATK, .vaporwave-frame .cardHP, .vaporwave-frame .cardRarity {
+    top: 213px;
+}
+
+.vaporwave-frame .cardQuantity, .vaporwave-frame .cardUCPCost {
+    top: 240px;
+}
+
+/* Spider party frame */
+
+.spider-party-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Spider_Party/frame_shiny.png');
+}
+
+.spider-party-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Spider_Party/frame_shiny_animated.png');
+}
+
+.spider-party-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Spider_Party/frame_spell.png');
+}
+
+.spider-party-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Spider_Party/frame_monster.png');
+}
+
+.spider-party-frame .cardName {
+    left: 11px;
+}
+
+.spider-party-frame .cardName, .spider-party-frame .cardCost {
+    top: 9px;
+}
+
+.spider-party-frame .cardDesc, .spider-party-frame .cardSilence {
+    top: 131px;
+}
+
+.spider-party-frame .cardATK, .spider-party-frame .cardHP, .spider-party-frame .cardRarity {
+    top: 214px;
+}
+
+.spider-party-frame .cardQuantity, .spider-party-frame .cardUCPCost {
+    top: 243px;
+}
+
+/* Halloween2020 frame */
+
+.halloween2020-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Halloween2020/frame_shiny.png');
+}
+
+.halloween2020-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Halloween2020/frame_shiny_animated.png');
+}
+
+.halloween2020-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Halloween2020/frame_spell.png');
+}
+
+.halloween2020-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Halloween2020/frame_monster.png');
+}
+
+.halloween2020-frame .cardName {
+    left: 11px;
+}
+
+.halloween2020-frame .cardBackground {
+    height: 236px;
+}
+
+.halloween2020-frame .cardName, .halloween2020-frame .cardCost {
+    top: 9px;
+}
+
+.halloween2020-frame .cardDesc, .halloween2020-frame .cardSilence {
+    top: 129px;
+}
+
+.halloween2020-frame .cardATK, .halloween2020-frame .cardHP {
+    top: 213px;
+}
+
+.halloween2020-frame .cardRarity {
+    top: 219px;
+}
+
+.halloween2020-frame .cardQuantity, .halloween2020-frame .cardUCPCost {
+    top: 245px;
+}
+
+/* Vaporeware */
+
+.christmas2020-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Christmas2020/frame_shiny.png');
+}
+
+.christmas2020-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Christmas2020/frame_shiny_animated.png');
+}
+
+.christmas2020-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Christmas2020/frame_spell.png');
+}
+
+.christmas2020-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Christmas2020/frame_monster.png');
+}
+
+.christmas2020-frame .cardName, .christmas2020-frame .cardCost {
+    top: 9px;
+}
+
+.christmas2020-frame .cardDesc, .christmas2020-frame .cardSilence {
+    top: 129px;
+}
+
+.christmas2020-frame .cardATK, .christmas2020-frame .cardHP, .christmas2020-frame .cardRarity {
+    top: 213px;
+}
+
+.christmas2020-frame .cardQuantity, .christmas2020-frame .cardUCPCost {
+    top: 240px;
+}
+
+/* Vaporeware */
+
+.ranked2025-frame .shinySlot {
+    background-image: url('../Undercards/frameSkins/Ranked2025/frame_shiny.png');
+}
+
+.ranked2025-frame .shinySlot.animated {
+    background-image: url('../Undercards/frameSkins/Ranked2025/frame_shiny_animated.png');
+}
+
+.ranked2025-frame.spell .cardFrame {
+    background-image: url('../Undercards/frameSkins/Ranked2025/frame_spell.png');
+}
+
+.ranked2025-frame.monster .cardFrame {
+    background-image: url('../Undercards/frameSkins/Ranked2025/frame_monster.png');
+}
+
+.ranked2025-frame .cardName, .ranked2025-frame .cardCost {
+    top: 9px;
+}
+
+.ranked2025-frame .cardDesc, .ranked2025-frame .cardSilence {
+    top: 129px;
+}
+
+.ranked2025-frame .cardATK, .ranked2025-frame .cardHP, .ranked2025-frame .cardRarity {
+    top: 213px;
+}
+
+.ranked2025-frame .cardQuantity, .ranked2025-frame .cardUCPCost {
+    top: 240px;
+}
