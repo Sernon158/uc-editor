@@ -14,7 +14,7 @@ function setupTippy() {
     var $customRarityDiv = $(`
     <div id="custom_rarity_group" style="height: 24px;">
         <label style="max-height: 25px;">
-            <img id="custom-rarity" src="./Undercards/CUSTOM.png">
+            <img id="custom-rarity" src="./images/CUSTOM.png">
             <input id="custom-rarity-input" type="file" accept="image/*" style="display: none;">
         </label>
         <br>
@@ -27,7 +27,7 @@ function setupTippy() {
         var r = rarities[rarity];
 
         if (r != "") {
-            $currentDiv.append(`<img src="./Undercards/rarity/${r}.png" />`)
+            $currentDiv.append(`<img src="./images/rarity/${r}.png" />`)
         } else {
             $rarity.append($currentDiv)
 
@@ -97,7 +97,7 @@ function setupTippy() {
 
     var $customTribe = $(`
         <label>
-            <img id="custom-tribe" src="./Undercards/CUSTOM.png">
+            <img id="custom-tribe" src="./images/CUSTOM.png">
             <input id="custom-tribe-input" type="file" accept="image/*" style="display: none;">
         </label>
     `)
@@ -111,7 +111,7 @@ function setupTippy() {
             `<img
                 title="${t}"
                 alt="${t}"
-                src="./Undercards/tribes/${tfil}.png"
+                src="./images/tribes/${tfil}.png"
                 data-name="${tfil}"
             >`
         )
@@ -123,7 +123,7 @@ function setupTippy() {
     /*
     var $customTribe = $(`
         <label>
-            <img id="custom-power" src="./Undercards/CUSTOM.png">
+            <img id="custom-power" src="./images/CUSTOM.png">
             <input id="custom-power-input" type="file" accept="image/*" style="display: none;">
         </label>
     `)
@@ -139,7 +139,7 @@ function setupTippy() {
             `<img
                 title="${pname}"
                 alt="${pname}"
-                src="./Undercards/powers/${picon}.png"
+                src="./images/powers/${picon}.png"
                 data-name="${picon}"
                 data-counter="${pcounter}"
             >

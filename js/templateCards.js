@@ -12,12 +12,12 @@ const createDefaultTemplate = (type, frame, stats=true)=>{
 
     var power = (stats == true ? `
         <parent data-r="0" style="right: 0px;">
-            <img class="infoPowers addPower add-button-card" src="./Undercards/ADD.png">
+            <img class="infoPowers addPower add-button-card" src="./images/ADD.png">
         </parent>
     ` : '')
-    var tribe = (stats == true ? `<img style="right: 0px;" data-r="0" class="tribe addTribe add-button-card" src="./Undercards/ADD.png">` : '')
+    var tribe = (stats == true ? `<img style="right: 0px;" data-r="0" class="tribe addTribe add-button-card" src="./images/ADD.png">` : '')
 
-    var rarity = (stats == true ? 'background: url(&quot;./Undercards/rarity/BASE_COMMON.png&quot;) no-repeat transparent;' : '')
+    var rarity = (stats == true ? 'background: url(&quot;./images/rarity/BASE_COMMON.png&quot;) no-repeat transparent;' : '')
     
     switch (type) {
         case 0: // MONSTER
@@ -136,7 +136,7 @@ const createArtifactTemplate = ()=>{
             <div class="artifactImage">
                 <label>
                     <input class="cardImageUploader" type="file" accept="image/*">
-                    <img src="./Undercards/Empty.png">
+                    <img src="./images/Empty.png">
                 </label>
             </div>
             <div class="artifactName">

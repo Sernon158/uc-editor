@@ -6,7 +6,7 @@ const settings = [
     },
     {
         "id": "autodt",
-        "name": "Automatically add <img src='./Undercards/powers/determination.png'> to <span class='DETERMINATION'>DT</span> cards",
+        "name": "Automatically add <img src='./images/powers/determination.png'> to <span class='DETERMINATION'>DT</span> cards",
         "default": true
     },
     {

@@ -487,7 +487,7 @@ function setupCardTippy(cardID, cardType) {
                         style="right: ${rightPx}px;"
                         data-r="${rightPx}"
                         class="tribe"
-                        src="./Undercards/tribes/${tribeName}.png"
+                        src="./images/tribes/${tribeName}.png"
                         data-tribe-name="${tribeName}"
                         onclick="removeCardTribe($(this))"
                     >
@@ -769,7 +769,7 @@ function addCardPower($card, power) {
     const powerName = power.name;
     const powerCounter = power.counter;
     const visPowerCounter = Number(powerCounter);
-    const powerImage = power.src || `./Undercards/powers/${powerName}.png`;
+    const powerImage = power.src || `./images/powers/${powerName}.png`;
 
     const $parentElements = $cardStatus.children('parent');
 

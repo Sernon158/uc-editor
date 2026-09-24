@@ -17,18 +17,18 @@ function createNewGroup() {
                     </div>
                 </div>
                 <div class="center">
-                    <img class="save-group" src="./Undercards/SAVE_GROUP.png" alt="Save Group">
-                    <img class="load-group" src="./Undercards/LOAD_GROUP.png" alt="Load Group">
-                    <img class="delete-group" src="./Undercards/DELETE_GROUP.png" alt="Delete Group">
+                    <img class="save-group" src="./images/SAVE_GROUP.png" alt="Save Group">
+                    <img class="load-group" src="./images/LOAD_GROUP.png" alt="Load Group">
+                    <img class="delete-group" src="./images/DELETE_GROUP.png" alt="Delete Group">
                 </div>
                 <div class="right-side">
-                    <img class="btn-create create-monster" src="./Undercards/MONSTER.png" alt="Create Monster">
-                    <img class="btn-create create-spell" src="./Undercards/SPELL.png" alt="Create Spell">
-                    <img class="btn-create create-enchant" src="./Undercards/ENCHANTMENT.png" alt="Create Enchantment">
-                    <img class="btn-create create-artifact" src="./Undercards/ARTIFACT.png" alt="Create Artifact">
-                    <img class="btn-create create-template" src="./Undercards/TEMPLATE.png" alt="Create Template">
-                    <img class="btn-create toggle-drag-mode" src="./Undercards/MOVE_CARD.png" alt="Move Card">
-                    <img class="btn-create download-group" src="./Undercards/DOWNLOAD.png" alt="Download Group">
+                    <img class="btn-create create-monster" src="./images/MONSTER.png" alt="Create Monster">
+                    <img class="btn-create create-spell" src="./images/SPELL.png" alt="Create Spell">
+                    <img class="btn-create create-enchant" src="./images/ENCHANTMENT.png" alt="Create Enchantment">
+                    <img class="btn-create create-artifact" src="./images/ARTIFACT.png" alt="Create Artifact">
+                    <img class="btn-create create-template" src="./images/TEMPLATE.png" alt="Create Template">
+                    <img class="btn-create toggle-drag-mode" src="./images/MOVE_CARD.png" alt="Move Card">
+                    <img class="btn-create download-group" src="./images/DOWNLOAD.png" alt="Download Group">
                 </div>
             </div>
         

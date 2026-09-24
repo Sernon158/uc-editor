@@ -68,7 +68,7 @@ function getCardTemplatesHTML(groupId, list = allCards) {
 
         return `
             <div class="card-display" onclick="buildCardTemplate(${groupId}, this.dataset.i); currentDialog.close();" data-i="${i}">
-                <img src="./Undercards/cards/${card.image || "Blank"}.png" width="160" height="90" loading="lazy">
+                <img src="./images/cards/${card.image || "Blank"}.png" width="160" height="90" loading="lazy">
                 <span>${card.name}</span>
             </div>
         `;
@@ -86,7 +86,7 @@ function getArtifactTemplatesHTML(groupId, list = allArtifacts) {
 
         return `
             <div class="card-display" onclick="buildArtifactTemplate(${groupId}, this.dataset.i); currentDialog.close();" data-i="${i}">
-                <img src="./Undercards/artifacts/${art.image || "Blank"}.png" width="64" height="64" loading="lazy">
+                <img src="./images/artifacts/${art.image || "Blank"}.png" width="64" height="64" loading="lazy">
                 <span>${art.name}</span>
             </div>
         `;
@@ -104,7 +104,7 @@ function getEnchantTemplatesHTML(groupId, list = allEnchants) {
 
         return `
             <div class="card-display" onclick="buildEnchantTemplate(${groupId}, this.dataset.i); currentDialog.close();" data-i="${i}">
-                <img src="./Undercards/enchants/${ench.replace(' ', '') || "Blank"}.png" width="110" height="125" loading="lazy">
+                <img src="./images/enchants/${ench.replace(' ', '') || "Blank"}.png" width="110" height="125" loading="lazy">
                 <span>${ench}</span>
             </div>
         `;
@@ -161,7 +161,7 @@ function buildCardTemplate(groupId, i) {
 
     $card.find('.cardCost span').html(card.cost);
     $card.find('.cardImage').css({
-        'background-image': `url("./Undercards/cards/${card.image}.png")`,
+        'background-image': `url("./images/cards/${card.image}.png")`,
         'background-repeat': 'no-repeat',
         'background-color': 'transparent'
     });
@@ -209,7 +209,7 @@ function buildCardTemplate(groupId, i) {
             style="right: ${rightPx}px;"
             data-r="${rightPx}"
             class="tribe"
-            src="./Undercards/tribes/${tribe}.png"
+            src="./images/tribes/${tribe}.png"
             data-tribe-name="${tribe}"
             onclick="removeCardTribe($(this))"
         >
@@ -221,7 +221,7 @@ function buildCardTemplate(groupId, i) {
     
     $card.find('.cardATK span').html(card.attack);
     $card.find('.cardRarity').css({
-        'background-image': `url("./Undercards/rarity/${card.extension}_${card.rarity}.png")`,
+        'background-image': `url("./images/rarity/${card.extension}_${card.rarity}.png")`,
         'background-repeat': 'no-repeat',
         'background-color': 'transparent'
     });
@@ -237,7 +237,7 @@ function buildArtifactTemplate(groupId, i) {
         : art.legendary   ? "LEGENDARY"
         : "COMMON"
 
-    $art.find('.artifactImage img').attr('src', `./Undercards/artifacts/${art.image}.png`);
+    $art.find('.artifactImage img').attr('src', `./images/artifacts/${art.image}.png`);
     $art.find('.artifactName span').text(art.name);
     $art.find('.artifactRarity select').val(artRarity).trigger('change');
     $art.find('.artifactDesc textarea').text($.i18n(`artifact-${art.id}`)).trigger('blur');
@@ -250,7 +250,7 @@ function buildEnchantTemplate(groupId, i) {
     $card.find('.cardName input').attr('value', enchName).trigger('blur');
 
     $card.find('.cardImage').css({
-        'background-image': `url("./Undercards/enchants/${enchName.replace(' ', '')}.png")`,
+        'background-image': `url("./images/enchants/${enchName.replace(' ', '')}.png")`,
         'background-repeat': 'no-repeat',
         'background-color': 'transparent'
     });

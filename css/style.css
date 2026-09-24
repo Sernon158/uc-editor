@@ -87,13 +87,13 @@
 
 @font-face {
     font-family: dtm-mono;
-    src: url('../Undercards/fonts/DTM-Mono.otf') format('truetype');
+    src: url('../images/fonts/DTM-Mono.otf') format('truetype');
 }
 
 body {
     font-family: dtm-mono;
     background-color: black;
-    background-image: url('../Undercards/uty_homepage.png');
+    background-image: url('../images/uty_homepage.png');
     background-repeat: repeat;
     color: white;
     margin-inline: 10px;
@@ -637,9 +637,9 @@ label {
 
 /* Custom Card Type: Enchant */
 .card.enchant {
-    .shinySlot { background-image: url('../Undercards/frameSkins/Undertale/frame_shiny.png'); }
-    .shinySlot.animated { background-image: url('../Undercards/frameSkins/Undertale/frame_shiny_animated.png'); }
-    .cardFrame { background-image: url('../Undercards/frameSkins/Undertale/frame_enchant.png'); }
+    .shinySlot { background-image: url('../images/frameSkins/Undertale/frame_shiny.png'); }
+    .shinySlot.animated { background-image: url('../images/frameSkins/Undertale/frame_shiny_animated.png'); }
+    .cardFrame { background-image: url('../images/frameSkins/Undertale/frame_enchant.png'); }
 
     .cardName {
         width: 160px;
