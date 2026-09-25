@@ -7,13 +7,16 @@ const EMPTY_GROUP = {
 
 const oldLink = "https://uc-editor.vercel.app/";
 
+/**
+ * Removes old editor links from an image link or css background image.
+ */
 function imgSrc(src) {
-    let bg = "url(\"";
+    const startsWith = (str) => src.startsWith("url(\""+str) || str.startsWith(str);
 
-    if (src && src.startsWith(bg+oldLink))
+    if (src && startsWith(oldLink))
         src = src.replace(oldLink, "./");
     
-    if (src && src.startsWith(bg+"./Undercards/"))
+    if (src && startsWith("./Undercards/"))
         src = src.replace("./Undercards/", "./images/");
 
     return src
