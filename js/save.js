@@ -5,6 +5,20 @@ const EMPTY_GROUP = {
     cards: []
 };
 
+const oldLink = "https://uc-editor.vercel.app/";
+
+function imgSrc(src) {
+    let bg = "url(\"";
+
+    if (src && src.startsWith(bg+oldLink))
+        src = src.replace(oldLink, "./");
+    
+    if (src && src.startsWith(bg+"./Undercards/"))
+        src = src.replace("./Undercards/", "./images/");
+
+    return src
+}
+
 function loadSave(groupId, json, baseAutosaveLoad = false) {
     if (json === null) return false;
 
@@ -27,7 +41,7 @@ function loadArtifact(groupId, artifact) {
     const $artifactRaritySpan = $artifact.find('.artifactRarity span');
     const $artifactDescTextarea = $artifact.find('.artifactDesc textarea');
 
-    $artifactImage.attr('src', artifact.image);
+    $artifactImage.attr('src', imgSrc(artifact.image));
     $artifactName.text(artifact.name);
 
     $artifactRarity.val(artifact.rarity);
@@ -81,7 +95,7 @@ function loadCard(groupId, card) {
     }
 
     $cardImage.css({
-        'background-image': card.image,
+        'background-image': imgSrc(card.image),
         'background-repeat': 'no-repeat',
         'background-color': 'transparent',
     });
@@ -123,7 +137,7 @@ function loadCard(groupId, card) {
     $cardDescTextarea.val(card.desc).trigger('blur');
 
     $cardRarity.css({
-        'background-image': card.rarity,
+        'background-image': imgSrc(card.rarity),
         'background-repeat': 'no-repeat',
         'background-color': 'transparent',
         'background-position': card.isRarityCustom ? 'center' : 'unset',

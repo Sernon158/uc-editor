@@ -782,7 +782,7 @@ function addCardPower($card, power) {
             style="right: ${rightPx}px;"
             ${!powerCustom ? `data-power-name="${powerName}"` : `data-power-custom="true"`}
         >
-            <img class="infoPowers" src="${powerImage}" data-counter="${powerCounter ? 'true' : 'false'}">
+            <img class="infoPowers" src="${imgSrc(powerImage)}" data-counter="${powerCounter ? 'true' : 'false'}">
             <span class="infoPowersDetails" style="display: ${powerCounter ? 'block' : 'none'};">${visPowerCounter || '0'}</span>
         </parent>
     `)
