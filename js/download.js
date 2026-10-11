@@ -155,7 +155,8 @@ async function downloadGroup(groupId) {
 
     $($a[0].click()).remove();
 
-  currentDialog.close();
+    if (currentDialog) currentDialog.close();
+    else setTimeout(() => currentDialog.close(), 300);
   })
   .catch(function (error) {
     console.error('Error while downloading card: ', error);
