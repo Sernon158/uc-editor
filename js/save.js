@@ -92,6 +92,7 @@ function loadCard(groupId, card) {
 
     if (isSpell) {
         $cardName.addClass(card.spellSoul);
+        $card.find('.cardName div span').addClass(card.spellSoul);
         $cardCost.text(card.stats);
     }
     
