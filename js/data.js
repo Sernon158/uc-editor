@@ -173,6 +173,11 @@ const powers = [
         name: "Flowery Power",
         icon: "flowerypower",
         counter: false
+    },
+    {
+        name: "Mold Spore",
+        icon: "moldspore",
+        counter: true
     }
 ]
 
@@ -213,6 +218,7 @@ const keywords = [
     "Reward",
     "Quest",
     "Flowery Power",
+    "Mold Spore",
     /*------ Tribe cheeses because they decided to change the name of these tribes 😭 ------*/
     "Tem",
     "Tems",
