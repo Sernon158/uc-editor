@@ -68,15 +68,15 @@ function setupTippy() {
                 return `<span class="${rarity}">${rarity}</span>`;
             }).join(', ')}
             ,
+            ${keywords.map((kw) => {
+                return `<span class="underlined">${kw}</span>`;
+            }).join(', ')}
+            ,
             ${tribes.map((tribe) => {
                 return !unfilteredTribes.includes(tribe)
                     ? `<span class="underlined">${tribe}</span>`
                     : null;
             }).filter((e) => e).join(', ')}
-            ,
-            ${keywords.map((kw) => {
-                return `<span class="underlined">${kw}</span>`;
-            }).join(', ')}
 
             <hr>
             <span>

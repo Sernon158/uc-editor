@@ -66,6 +66,14 @@ function applyDescFilters(txt) {
             .replace(underlineRegex, (_, $1) => `<span class="underlined">${$1}</span>`)
             .replace(highlightRegex, (_, $1) => `<span class="PATIENCE">${$1}</span>`)
 
+    for (var i = 0; i < keywords.length; i++) {
+        const kw = keywords[i];
+
+        const ukwRegex = new RegExp(`(${charsBefore})${kw}(${charsAfter})`, 'g');
+
+        txt = txt.replaceAll(ukwRegex, `<span class="underlined">${kw}</span>`)
+    }
+
     for (var i = 0; i < tribes.length; i++) {
         const tribe = tribes[i];
 
@@ -77,14 +85,6 @@ function applyDescFilters(txt) {
             txt = txt.replaceAll(pluralTribeRegex, `<span class="underlined">${tribe}s</span>`);
             txt = txt.replaceAll(tribeRegex, `<span class="underlined">${tribe}</span>`);
         }
-    }
-
-    for (var i = 0; i < keywords.length; i++) {
-        const kw = keywords[i];
-
-        const ukwRegex = new RegExp(`(${charsBefore})${kw}(${charsAfter})`, 'g');
-
-        txt = txt.replaceAll(ukwRegex, `<span class="underlined">${kw}</span>`)
     }
 
     for (var i = 0; i < coloredKeywords.length; i++) {
